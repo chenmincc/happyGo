@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/details.css"/>
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/jquery.min.js"></script>
+		
+	</head>
+	<body>
+	<!--header-->
+	<!--header_top-->
+<div id="header_top">
+	<div class="header_top">
+		<div class="h_t_l">
+		    <span class="h_t_l_wz">欢迎来到快乐购！</span>
+			<a href="login.html" target="_blank" class="a_login">[登录] </a>
+			<a href="register.html" class="a_reg">[免费注册]</a>					
+		</div>
+		
+		<div class="h_t_r">
+			<ul>
+				<li><a href="#" target="_blank">合作招商</a><span class="line"></span></li>
+				<li><a href="#" target="_blank">订单查询</a><span class="line"></span></li>
+				<li><a href="#" target="_blank">我的快乐购</a><span class="line"></span></li>
+				<li>
+					<i class="tel_icon"></i>
+					<span class="sp_tel">400-705-1111</span>
+					<span class="line"></span>
+				</li>
+				<li class="d_l_hgp">
+					<a href="#">下载快乐购app</a><span class="line"></span>
+					<div class="down_load_hpg" style="display: none;">
+						<div class="down_load_border"> 
+							<!--<b class="icon_top"></b>--> 
+							<img src="image/app.png">
+							<p>快乐生活 快乐购</p>
+						</div>
+					</div>
+				</li>
+				<li class="cus_c_box">
+					<a href="#">客服中心<b class="b_down"></b></a>
+					<div class="cus_center" style="display: none;">
+                        <a href="#">帮助中心</a>
+                        <a href="#">会员反馈</a>
+					</div>
+				</li>
+				
+			</ul>
+			
+		</div>
+	</div>
+</div>
+	
+	<!--header_center-->
+<div id="header_center">
+	<div class="header_center">
+		<div class="h_c_logo">
+			<a href="#"><img src="image/logo.png"></a>
+		</div>
+		
+		<div class="h_c_search">
+			<div class="search_input">
+				<i class="icon iconfont iconsearch"> </i>
+				
+				<form id="form1">
+				    <input autocomplete="off" hc="坚果" placeholder="坚果" id="keyword" class="txt_searchbox" type="text" name="keyword" value="">
+				    <input class="btn_search" type="button" value="搜索">
+				</form>
+			</div>
+			<div class="search_key">
+				<a href="#" target="_blank" title="大衣"><span style="color:#f00">大衣</span></a>
+	            <a href="#" target="_blank" title="保温板"> 保温板</a>
+	            <a href="#" target="_blank" title="速热水龙头"><span style="color:#f00">速热水龙头</span>            				</a>
+	            <a href="#" target="_blank" title="梦洁">梦洁</a>
+	            <a href="#" target="_blank" title="电热毯"><span style="color:#f00">电热毯</span>            				</a>
+	            <a href="#" target="_blank" title="双立人">双立人</a>
+	            <a href="#" target="_blank" title="破壁机">破壁机</a>
+	            <a href="#" target="_blank" title="取暖器"><span style="color:#f00">取暖器</span>            				</a>
+	            <a href="#" target="_blank" title="京城之霜"><span style="color:#f00">京城之霜</span>            				</a>
+	            <a href="#" target="_blank" title="康宁"><span style="color:#f00">康宁</span>            				</a>
+	            <a href="#" target="_blank" title="牛奶"><span style="color:#f00">牛奶</span>            				</a>
+	            <a href="#" target="_blank" title="羽绒服">羽绒服</a>
+			</div>
+		</div>
+		<div class="h_c_right">
+			<a href="#" class="h_c_r_car">购物车</a>
+		</div>
+	</div>
+</div>
+	<!--nav-->
+<div id="nav">
+	<div style="border-bottom: 2px solid #df0010;">
+    <div class="w1090">
+	<div class="full_nav">
+		<ul class="nav">
+			<li class="li_all_type">
+				<a href="#"><i class="iconfont b_down"></i>所有分类</a>
+			</li>
+			<li class="home  on">
+				<a href="/">首页</a>
+			</li>
+			<li>
+				<a href="#">TV直播</a>
+				<div class="tv_hot cus_ani"></div>
+			</li>
+			<li><a href="#">厨房必备</a></li>
+			<li><a href="#">美妆个护</a></li>
+			<li><a href="#">食品健康</a></li>
+			<li><a href="#">服饰家纺</a></li>
+			<li><a href="#">日用家电</a></li>
+       </ul>
+<!--首页分类-->
+		<div class="index_type" style="display: none;">
+			<ul class="index_type_ul">
+			    <li class="li_has_down">
+					<a class="type_color" target="_blank" href="#"> 
+						<i class="iconfont i_type i_type_mwcf"></i> &nbsp 个护美妆  &nbsp<i class="iconfont icontypearrow"></i>
+					</a>
+					<div class="nav_type_list" style="display: none;">
+			    		<ul class="se_type">	
+			    			<li class="ClearFix">
+			            		<a class="type_tit" href="#">面部护理<i class="iconfont"></i></a>
+						        <div class="three_type">
+						            <a target="_blank" href="#">面膜</a>
+						            <a target="_blank" href="#">乳液面霜</a>
+						            <a target="_blank" href="#">精华</a>
+						            <a target="_blank" href="#">护肤套组</a>
+						            <a target="_blank" href="#">防晒隔离</a>
+						            <a target="_blank" href="#">爽肤水</a>
+						            <a target="_blank" href="#">洁面乳</a>
+						            <a target="_blank" href="#">眼部护理</a>
+						            <a target="_blank" href="#">眼膜</a>
+								</div>
+			    			</li>    								                    									
+			    			<li class="ClearFix">
+			            		<a class="type_tit" href="#">香水彩妆<i class="iconfont"></i></a>
+			            		<div class="three_type">
+			            			<a target="_blank" href="#">唇膏唇彩</a>
+							        <a target="_blank" href="#">遮瑕</a>
+							        <a target="_blank" href="#">粉底粉饼</a>
+							        <a target="_blank" href="#">睫毛膏</a>
+							        <a target="_blank" href="#">眉笔</a>
+							        <a target="_blank" href="#">眼影/眼线</a>
+							        <a target="_blank" href="#">彩妆工具</a>
+							        <a target="_blank" href="#">卸妆</a>
+							        <a target="_blank" href="#">眼部护理</a>
+							        <a target="_blank" href="#">女士香水</a>
+			  					</div>
+			            	</li>
+			    			<li class="ClearFix">
+			            		<a class="type_tit" href="#">美发护发<i class="iconfont"></i></a>
+			            			<div class="three_type">
+			                			<a target="_blank" href="#">洗发水</a>
+							        <a target="_blank" href="#">护发素</a>
+							        <a target="_blank" href="#">洗护套装</a>
+							        <a target="_blank" href="#">卷发棒</a>
+							        <a target="_blank" href="#">电吹风</a>
+							        <a target="_blank" href="#">染发</a>
+							        <a target="_blank" href="#">电吹风</a>
+							        <a target="_blank" href="#">染发</a>
+			  					</div>
+			            	</li>	
+			    			<li class="ClearFix">
+			            		<a class="type_tit" href="#">身体护理<i class="iconfont"></i></a>
+			            		<div class="three_type">
+			            			<a target="_blank" href="#">私密护理</a>
+							        <a target="_blank" href="#">手工皂</a>
+							        <a target="_blank" href="#">美容养颜</a>
+							        <a target="_blank" href="#">磨砂膏</a>
+							        <a target="_blank" href="#">沐浴露</a>
+							        <a target="_blank" href="#">手足护理</a>
+							        <a target="_blank" href="#">身体乳</a>
+							        <a target="_blank" href="#">香薰精油</a>
+							        <a target="_blank" href="#">卫生巾</a>
+							        <a target="_blank" href="#">纤体瘦身</a>
+			  					</div>
+			            	</li>	
+			            		<li class="ClearFix">
+			            		<a class="type_tit" href="#">美容工具<i class="iconfont"></i></a>
+			            		<div class="three_type">
+			            			<a target="_blank" href="#">美容仪</a>
+							        <a target="_blank" href="#">洁面仪</a>
+							        <a target="_blank" href="#">理发器</a>
+							        <a target="_blank" href="#">剃须刀</a>
+							        <a target="_blank" href="#">剃毛器</a>
+							        <a target="_blank" href="#">美容配件</a>
+							        <a target="_blank" href="#">剃毛器</a>
+							        <a target="_blank" href="#">美容配件</a>
+			  					</div>
+			            	</li>					            							
+			    			<li class="ClearFix">
+			            		<a class="type_tit" href="#">口腔护理<i class="iconfont"></i></a>
+			            		<div class="three_type">
+			            			<a target="_blank" href="#">牙膏</a>
+							        <a target="_blank" href="#">牙刷</a>
+			  					</div>
+			            	</li>		
+						</ul>
+			    </div>
+		</li>
+		<li class="li_has_down">
+					 <!--食品健康 餐厨日用 服装配饰 布艺家纺 家电数码 品牌馆-->
+			<a class="type_color" target="_blank" href="#"> 
+				<i class="iconfont i_type i_type_mwcf"></i> &nbsp 食品健康    &nbsp<i class="iconfont icontypearrow"></i>
+			</a>
+				<div class="nav_type_list" style="display: none;">
+    				<ul class="se_type">
+    					<li class="ClearFix">
+            				<a class="type_tit" href="#">饮料冲调<i class="iconfont"></i></a>
+            					<div class="three_type">
+                					<a target="_blank" href="#">牛奶/酸奶</a>
+                					<a target="_blank" href="#">麦片/代餐粉</a>
+                					<a target="_blank" href="#">蜂蜜</a>
+                					<a target="_blank" href="#">冲调饮品</a>
+                					<a target="_blank" href="#">红糖/黑糖</a>
+                					<a target="_blank" href="#">咖啡</a>
+                					<a target="_blank" href="#">红糖/黑糖</a>
+                					<a target="_blank" href="#">咖啡</a>
+                				</div>
+            		</li>
+            		<li class="ClearFix">
+            				<a class="type_tit" href="#">粮油调味<i class="iconfont"></i></a>
+            					<div class="three_type">
+                					<a target="_blank" href="#">米面</a>
+                					<a target="_blank" href="#">五谷</a>
+                					<a target="_blank" href="#">食用油</a>
+                					<a target="_blank" href="#">速食食品</a>
+                					<a target="_blank" href="#">南北干货</a>
+                					<a target="_blank" href="#">调料</a>
+                					<a target="_blank" href="#">腊味</a>
+                					<a target="_blank" href="#">调料</a>
+                					<a target="_blank" href="#">腊味</a>
+                				</div>
+            		</li>
+            		<li class="ClearFix">
+            				<a class="type_tit" href="#">酒水茗茶<i class="iconfont"></i></a>
+            					<div class="three_type">
+                					<a target="_blank" href="#">白酒</a>
+                					<a target="_blank" href="#">进口红酒</a>
+                					<a target="_blank" href="#">国产红酒</a>
+                					<a target="_blank" href="#">啤酒</a>
+                					<a target="_blank" href="#">黑茶/普洱</a>
+                					<a target="_blank" href="#">红茶/绿茶</a>
+                					<a target="_blank" href="#">花草茶</a>
+                				</div>
+            		</li>
+            		<li class="ClearFix">
+            				<a class="type_tit" href="#">休闲食品<i class="iconfont"></i></a>
+            					<div class="three_type">
+                					<a target="_blank" href="#">坚果/果干</a>
+                					<a target="_blank" href="#">饼干糕点</a>
+                					<a target="_blank" href="#">糖果/巧克力</a>
+                					<a target="_blank" href="#">零食</a>
+                					<a target="_blank" href="#">麻辣零食</a>
+                					<a target="_blank" href="#">饼干糕点</a>
+                					<a target="_blank" href="#">糖果/巧克力</a>
+                					<a target="_blank" href="#">零食</a>
+                				</div>
+            		</li>
+            		<li class="ClearFix">
+            				<a class="type_tit" href="#">营养保健<i class="iconfont"></i></a>
+            					<div class="three_type">
+                					<a target="_blank" href="#">红枣/枸杞</a>
+                					<a target="_blank" href="#">女性保养</a>
+                					<a target="_blank" href="#">阿胶/燕窝</a>
+                					<a target="_blank" href="#">传统滋补</a>
+                					<a target="_blank" href="#">基本保健</a>
+                					<a target="_blank" href="#">瘦身/酵素</a>
+                					<a target="_blank" href="#">花草茶</a>
+                				</div>
+            		</li>
+            		<li class="ClearFix">
+            				<a class="type_tit" href="#">生鲜食品<i class="iconfont"></i></a>
+            					<div class="three_type">
+                					<a target="_blank" href="#">新鲜果蔬</a>
+                					<a target="_blank" href="#">肉类</a>
+                					<a target="_blank" href="#">家禽蛋类</a>
+                					<a target="_blank" href="#">大闸蟹</a>
+                					<a target="_blank" href="#">生鲜水产</a>
+                				</div>
+            		</li>
+				</ul>
+    	</div>
+	</li>
+		<li class="li_has_down">
+					 <!--食品健康 餐厨日用 服装配饰 布艺家纺 家电数码 品牌馆-->
+			<a class="type_color" target="_blank" href="#"> 
+				<i class="iconfont i_type i_type_mwcf"></i> &nbsp 餐厨日用  &nbsp<i class="iconfont icontypearrow"></i>
+			</a>
+			<div class="nav_type_list" style="display: none;">
+    			<ul class="se_type">
+    				<li class="ClearFix">
+            			<a class="type_tit" href="#">烹饪锅具<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">透明锅</a>
+                				<a href="#">炒锅/煎锅</a>
+                				<a href="#">汤锅/奶锅</a>
+                				<a href="#">大牌锅具</a>
+                				<a href="#">高速快锅</a>
+                				<a href="#">煲</a>
+                				<a href="#">炒锅/煎锅</a>
+                				<a href="#">汤锅/奶锅</a>
+                			</div>
+            		</li>
+            		<li class="ClearFix">
+            			<a class="type_tit" href="#">生活用品<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">个人清洁</a>
+                				<a href="#">厨房用品</a>
+                				<a href="#">日常用品</a>
+                				<a href="#">个人清洁</a>
+                				<a href="#">厨房用品</a>
+                				<a href="#">日常用品</a>
+                				<a href="#">日常用品</a>
+                			</div>
+            		</li>
+    				<li class="ClearFix">
+    					<a class="type_tit" href="#">厨房电器<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">电热水龙头</a>
+                				<a href="#">保温板</a>
+                				<a href="#">破壁/豆浆机</a>
+                				<a href="#">养生/电水壶</a>
+                				<a href="#">电饭煲</a>
+                				<a href="#">电炖/电火锅</a>
+                				<a href="#">电压力/电蒸锅</a>
+                				<a href="#">烤箱/微波炉</a>
+                				<a href="#">净水设备</a>
+                				<a href="#">料理/研磨机</a>
+                				<a href="#">榨汁/原汁机</a>
+                				<a href="#">酵素/酸奶机</a>
+                				<a href="#">面包/和面机</a>
+                				<a href="#">吐司/煮蛋器</a>
+                				<a href="#">烟灶消热</a>
+                				<a href="#">炉具</a>
+                				<a href="#">消毒/保洁柜</a>
+                				<a href="#">洗碗机</a>
+                				<a href="#">咖啡机</a>
+                				<a href="#">甜点机</a>
+                				<a href="#">冰淇淋机</a>
+                			</div>
+            		</li>
+            		<li class="ClearFix">
+            			<a class="type_tit" href="#">清洁收纳<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">清洁用品</a>
+                				<a href="#">收纳用品</a>
+                				<a href="#">晾晒置物</a>
+                				<a href="#">清洁用品</a>
+                				<a href="#">收纳用品</a>
+                				<a href="#">晾晒置物</a>
+                				<a href="#">清洁用品</a>
+                			</div>
+            		</li>
+            		<li class="ClearFix">
+            			<a class="type_tit" href="#">厨房用具<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">刀</a>
+                				<a href="#">砧板/托盘</a>
+                				<a href="#">保鲜盒/罐</a>
+                				<a href="#">米箱</a>
+                				<a href="#">刀</a>
+                				<a href="#">砧板/托盘</a>
+                				<a href="#">保鲜盒/罐</a>
+                				<a href="#">米箱</a>
+                			</div>
+            		</li>
+            		<li class="ClearFix">
+            			<a class="type_tit" href="#">厨房配件<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">保温饭盒</a>
+                				<a href="#">置物架</a>
+                				<a href="#">冰箱收纳</a>
+                				<a href="#">调料收纳</a>
+                				<a href="#">厨房小工具</a>
+                				<a href="#">厨房清洁</a>
+                				<a href="#">厨房小工具</a>
+                				<a href="#">厨房清洁</a>
+                			</div>
+            		</li>
+    				<li class="ClearFix">
+            			<a class="type_tit" href="#">家装建材<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">照明灯具</a>
+                				<a href="#">卫浴用品</a>
+                				<a href="#">其他</a>
+                			</div>
+            	</li>          											
+            </ul>
+    	
+    </div>
+</li>
+<li class="li_has_down">
+	 <!--食品健康 餐厨日用 服装配饰 布艺家纺 家电数码 品牌馆-->
+	<a class="type_color" target="_blank" href="#"> 
+						<i class="iconfont i_type i_type_mwcf"></i> &nbsp 服装配饰  &nbsp<i class="iconfont icontypearrow"></i>
+					</a>
+					<div class="nav_type_list" style="display: none;">
+			    		<ul class="se_type">	
+			    			<li class="ClearFix">
+			            		<a class="type_tit" href="#">面部护理<i class="iconfont"></i></a>
+						        <div class="three_type">
+						            <a target="_blank" href="#">面膜</a>
+						            <a target="_blank" href="#">乳液面霜</a>
+						            <a target="_blank" href="#">精华</a>
+						            <a target="_blank" href="#">护肤套组</a>
+						            <a target="_blank" href="#">防晒隔离</a>
+						            <a target="_blank" href="#">爽肤水</a>
+						            <a target="_blank" href="#">洁面乳</a>
+						            <a target="_blank" href="#">眼部护理</a>
+						            <a target="_blank" href="#">眼膜</a>
+								</div>
+			    			</li>    								                    									
+			    			<li class="ClearFix">
+			            		<a class="type_tit" href="#">香水彩妆<i class="iconfont"></i></a>
+			            		<div class="three_type">
+			            			<a target="_blank" href="#">唇膏唇彩</a>
+							        <a target="_blank" href="#">遮瑕</a>
+							        <a target="_blank" href="#">粉底粉饼</a>
+							        <a target="_blank" href="#">睫毛膏</a>
+							        <a target="_blank" href="#">眉笔</a>
+							        <a target="_blank" href="#">眼影/眼线</a>
+							        <a target="_blank" href="#">彩妆工具</a>
+							        <a target="_blank" href="#">卸妆</a>
+							        <a target="_blank" href="#">眼部护理</a>
+							        <a target="_blank" href="#">女士香水</a>
+			  					</div>
+			            	</li>
+			    			<li class="ClearFix">
+			            		<a class="type_tit" href="#">美发护发<i class="iconfont"></i></a>
+			            			<div class="three_type">
+			                			<a target="_blank" href="#">洗发水</a>
+							        <a target="_blank" href="#">护发素</a>
+							        <a target="_blank" href="#">洗护套装</a>
+							        <a target="_blank" href="#">卷发棒</a>
+							        <a target="_blank" href="#">电吹风</a>
+							        <a target="_blank" href="#">染发</a>
+							        <a target="_blank" href="#">电吹风</a>
+							        <a target="_blank" href="#">染发</a>
+			  					</div>
+			            	</li>	
+			    			<li class="ClearFix">
+			            		<a class="type_tit" href="#">身体护理<i class="iconfont"></i></a>
+			            		<div class="three_type">
+			            			<a target="_blank" href="#">私密护理</a>
+							        <a target="_blank" href="#">手工皂</a>
+							        <a target="_blank" href="#">美容养颜</a>
+							        <a target="_blank" href="#">磨砂膏</a>
+							        <a target="_blank" href="#">沐浴露</a>
+							        <a target="_blank" href="#">手足护理</a>
+							        <a target="_blank" href="#">身体乳</a>
+							        <a target="_blank" href="#">香薰精油</a>
+							        <a target="_blank" href="#">卫生巾</a>
+							        <a target="_blank" href="#">纤体瘦身</a>
+			  					</div>
+			            	</li>	
+			            		<li class="ClearFix">
+			            		<a class="type_tit" href="#">美容工具<i class="iconfont"></i></a>
+			            		<div class="three_type">
+			            			<a target="_blank" href="#">美容仪</a>
+							        <a target="_blank" href="#">洁面仪</a>
+							        <a target="_blank" href="#">理发器</a>
+							        <a target="_blank" href="#">剃须刀</a>
+							        <a target="_blank" href="#">剃毛器</a>
+							        <a target="_blank" href="#">美容配件</a>
+							        <a target="_blank" href="#">剃毛器</a>
+							        <a target="_blank" href="#">美容配件</a>
+			  					</div>
+			            	</li>					            							
+			    			<li class="ClearFix">
+			            		<a class="type_tit" href="#">口腔护理<i class="iconfont"></i></a>
+			            		<div class="three_type">
+			            			<a target="_blank" href="#">牙膏</a>
+							        <a target="_blank" href="#">牙刷</a>
+			  					</div>
+			            	</li>		
+						</ul>
+			    	
+			    </div>
+		</li>			
+</li>
+<li class="li_has_down">
+	<!--食品健康 餐厨日用 服装配饰 布艺家纺 家电数码 品牌馆-->
+	<a class="type_color" target="_blank" href="#"> 
+		<i class="iconfont i_type i_type_mwcf"></i> &nbsp 布艺家纺  &nbsp<i class="iconfont icontypearrow"></i>
+	</a>
+	<div class="nav_type_list" style="display: none;">
+    			<ul class="se_type">
+    				<li class="ClearFix">
+            			<a class="type_tit" href="#">烹饪锅具<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">透明锅</a>
+                				<a href="#">炒锅/煎锅</a>
+                				<a href="#">汤锅/奶锅</a>
+                				<a href="#">大牌锅具</a>
+                				<a href="#">高速快锅</a>
+                				<a href="#">煲</a>
+                				<a href="#">炒锅/煎锅</a>
+                				<a href="#">汤锅/奶锅</a>
+                			</div>
+            		</li>
+            		<li class="ClearFix">
+            			<a class="type_tit" href="#">生活用品<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">个人清洁</a>
+                				<a href="#">厨房用品</a>
+                				<a href="#">日常用品</a>
+                				<a href="#">个人清洁</a>
+                				<a href="#">厨房用品</a>
+                				<a href="#">日常用品</a>
+                				<a href="#">日常用品</a>
+                			</div>
+            		</li>
+    				<li class="ClearFix">
+    					<a class="type_tit" href="#">厨房电器<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">电热水龙头</a>
+                				<a href="#">保温板</a>
+                				<a href="#">破壁/豆浆机</a>
+                				<a href="#">养生/电水壶</a>
+                				<a href="#">电饭煲</a>
+                				<a href="#">电炖/电火锅</a>
+                				<a href="#">电压力/电蒸锅</a>
+                				<a href="#">烤箱/微波炉</a>
+                				<a href="#">净水设备</a>
+                				<a href="#">料理/研磨机</a>
+                				<a href="#">榨汁/原汁机</a>
+                				<a href="#">酵素/酸奶机</a>
+                				<a href="#">面包/和面机</a>
+                				<a href="#">吐司/煮蛋器</a>
+                				<a href="#">烟灶消热</a>
+                				<a href="#">炉具</a>
+                				<a href="#">消毒/保洁柜</a>
+                				<a href="#">洗碗机</a>
+                				<a href="#">咖啡机</a>
+                				<a href="#">甜点机</a>
+                				<a href="#">冰淇淋机</a>
+                			</div>
+            		</li>
+            		<li class="ClearFix">
+            			<a class="type_tit" href="#">清洁收纳<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">清洁用品</a>
+                				<a href="#">收纳用品</a>
+                				<a href="#">晾晒置物</a>
+                				<a href="#">清洁用品</a>
+                				<a href="#">收纳用品</a>
+                				<a href="#">晾晒置物</a>
+                				<a href="#">清洁用品</a>
+                			</div>
+            		</li>
+            		<li class="ClearFix">
+            			<a class="type_tit" href="#">厨房用具<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">刀</a>
+                				<a href="#">砧板/托盘</a>
+                				<a href="#">保鲜盒/罐</a>
+                				<a href="#">米箱</a>
+                				<a href="#">刀</a>
+                				<a href="#">砧板/托盘</a>
+                				<a href="#">保鲜盒/罐</a>
+                				<a href="#">米箱</a>
+                			</div>
+            		</li>
+            		<li class="ClearFix">
+            			<a class="type_tit" href="#">厨房配件<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">保温饭盒</a>
+                				<a href="#">置物架</a>
+                				<a href="#">冰箱收纳</a>
+                				<a href="#">调料收纳</a>
+                				<a href="#">厨房小工具</a>
+                				<a href="#">厨房清洁</a>
+                				<a href="#">厨房小工具</a>
+                				<a href="#">厨房清洁</a>
+                			</div>
+            		</li>
+    				<li class="ClearFix">
+            			<a class="type_tit" href="#">家装建材<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">照明灯具</a>
+                				<a href="#">卫浴用品</a>
+                				<a href="#">其他</a>
+                			</div>
+            	</li>          											
+            </ul>
+    	
+    </div>
+</li>
+<li class="li_has_down">
+	<!--食品健康 餐厨日用 服装配饰 布艺家纺 家电数码 品牌馆-->
+	<a class="type_color" target="_blank" href="#"> 
+		<i class="iconfont i_type i_type_mwcf"></i> &nbsp 家电数码  &nbsp<i class="iconfont icontypearrow"></i>
+	</a>
+	<div class="nav_type_list" style="display: none;">
+			    		<ul class="se_type">	
+			    			<li class="ClearFix">
+			            		<a class="type_tit" href="#">面部护理<i class="iconfont"></i></a>
+						        <div class="three_type">
+						            <a target="_blank" href="#">面膜</a>
+						            <a target="_blank" href="#">乳液面霜</a>
+						            <a target="_blank" href="#">精华</a>
+						            <a target="_blank" href="#">护肤套组</a>
+						            <a target="_blank" href="#">防晒隔离</a>
+						            <a target="_blank" href="#">爽肤水</a>
+						            <a target="_blank" href="#">洁面乳</a>
+						            <a target="_blank" href="#">眼部护理</a>
+						            <a target="_blank" href="#">眼膜</a>
+								</div>
+			    			</li>    								                    									
+			    			<li class="ClearFix">
+			            		<a class="type_tit" href="#">香水彩妆<i class="iconfont"></i></a>
+			            		<div class="three_type">
+			            			<a target="_blank" href="#">唇膏唇彩</a>
+							        <a target="_blank" href="#">遮瑕</a>
+							        <a target="_blank" href="#">粉底粉饼</a>
+							        <a target="_blank" href="#">睫毛膏</a>
+							        <a target="_blank" href="#">眉笔</a>
+							        <a target="_blank" href="#">眼影/眼线</a>
+							        <a target="_blank" href="#">彩妆工具</a>
+							        <a target="_blank" href="#">卸妆</a>
+							        <a target="_blank" href="#">眼部护理</a>
+							        <a target="_blank" href="#">女士香水</a>
+			  					</div>
+			            	</li>
+			    			<li class="ClearFix">
+			            		<a class="type_tit" href="#">美发护发<i class="iconfont"></i></a>
+			            			<div class="three_type">
+			                			<a target="_blank" href="#">洗发水</a>
+							        <a target="_blank" href="#">护发素</a>
+							        <a target="_blank" href="#">洗护套装</a>
+							        <a target="_blank" href="#">卷发棒</a>
+							        <a target="_blank" href="#">电吹风</a>
+							        <a target="_blank" href="#">染发</a>
+							        <a target="_blank" href="#">电吹风</a>
+							        <a target="_blank" href="#">染发</a>
+			  					</div>
+			            	</li>	
+			    			<li class="ClearFix">
+			            		<a class="type_tit" href="#">身体护理<i class="iconfont"></i></a>
+			            		<div class="three_type">
+			            			<a target="_blank" href="#">私密护理</a>
+							        <a target="_blank" href="#">手工皂</a>
+							        <a target="_blank" href="#">美容养颜</a>
+							        <a target="_blank" href="#">磨砂膏</a>
+							        <a target="_blank" href="#">沐浴露</a>
+							        <a target="_blank" href="#">手足护理</a>
+							        <a target="_blank" href="#">身体乳</a>
+							        <a target="_blank" href="#">香薰精油</a>
+							        <a target="_blank" href="#">卫生巾</a>
+							        <a target="_blank" href="#">纤体瘦身</a>
+			  					</div>
+			            	</li>	
+			            		<li class="ClearFix">
+			            		<a class="type_tit" href="#">美容工具<i class="iconfont"></i></a>
+			            		<div class="three_type">
+			            			<a target="_blank" href="#">美容仪</a>
+							        <a target="_blank" href="#">洁面仪</a>
+							        <a target="_blank" href="#">理发器</a>
+							        <a target="_blank" href="#">剃须刀</a>
+							        <a target="_blank" href="#">剃毛器</a>
+							        <a target="_blank" href="#">美容配件</a>
+							        <a target="_blank" href="#">剃毛器</a>
+							        <a target="_blank" href="#">美容配件</a>
+			  					</div>
+			            	</li>					            							
+			    			<li class="ClearFix">
+			            		<a class="type_tit" href="#">口腔护理<i class="iconfont"></i></a>
+			            		<div class="three_type">
+			            			<a target="_blank" href="#">牙膏</a>
+							        <a target="_blank" href="#">牙刷</a>
+			  					</div>
+			            	</li>		
+						</ul>
+			    	
+			    </div>
+		</li>			
+</li>
+<li class="li_has_down">
+	<!--食品健康 餐厨日用 服装配饰 布艺家纺 家电数码 品牌馆-->
+	<a class="type_color" target="_blank" href="#"> 
+		<i class="iconfont i_type i_type_mwcf"></i> &nbsp &nbsp 品牌馆  &nbsp &nbsp<i class="iconfont icontypearrow"></i>
+	</a>
+	<div class="nav_type_list" style="display: none;">
+    			<ul class="se_type">
+    				<li class="ClearFix">
+            			<a class="type_tit" href="#">烹饪锅具<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">透明锅</a>
+                				<a href="#">炒锅/煎锅</a>
+                				<a href="#">汤锅/奶锅</a>
+                				<a href="#">大牌锅具</a>
+                				<a href="#">高速快锅</a>
+                				<a href="#">煲</a>
+                				<a href="#">炒锅/煎锅</a>
+                				<a href="#">汤锅/奶锅</a>
+                			</div>
+            		</li>
+            		<li class="ClearFix">
+            			<a class="type_tit" href="#">生活用品<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">个人清洁</a>
+                				<a href="#">厨房用品</a>
+                				<a href="#">日常用品</a>
+                				<a href="#">个人清洁</a>
+                				<a href="#">厨房用品</a>
+                				<a href="#">日常用品</a>
+                				<a href="#">日常用品</a>
+                			</div>
+            		</li>
+    				<li class="ClearFix">
+    					<a class="type_tit" href="#">厨房电器<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">电热水龙头</a>
+                				<a href="#">保温板</a>
+                				<a href="#">破壁/豆浆机</a>
+                				<a href="#">养生/电水壶</a>
+                				<a href="#">电饭煲</a>
+                				<a href="#">电炖/电火锅</a>
+                				<a href="#">电压力/电蒸锅</a>
+                				<a href="#">烤箱/微波炉</a>
+                				<a href="#">净水设备</a>
+                				<a href="#">料理/研磨机</a>
+                				<a href="#">榨汁/原汁机</a>
+                				<a href="#">酵素/酸奶机</a>
+                				<a href="#">面包/和面机</a>
+                				<a href="#">吐司/煮蛋器</a>
+                				<a href="#">烟灶消热</a>
+                				<a href="#">炉具</a>
+                				<a href="#">消毒/保洁柜</a>
+                				<a href="#">洗碗机</a>
+                				<a href="#">咖啡机</a>
+                				<a href="#">甜点机</a>
+                				<a href="#">冰淇淋机</a>
+                			</div>
+            		</li>
+            		<li class="ClearFix">
+            			<a class="type_tit" href="#">清洁收纳<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">清洁用品</a>
+                				<a href="#">收纳用品</a>
+                				<a href="#">晾晒置物</a>
+                				<a href="#">清洁用品</a>
+                				<a href="#">收纳用品</a>
+                				<a href="#">晾晒置物</a>
+                				<a href="#">清洁用品</a>
+                			</div>
+            		</li>
+            		<li class="ClearFix">
+            			<a class="type_tit" href="#">厨房用具<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">刀</a>
+                				<a href="#">砧板/托盘</a>
+                				<a href="#">保鲜盒/罐</a>
+                				<a href="#">米箱</a>
+                				<a href="#">刀</a>
+                				<a href="#">砧板/托盘</a>
+                				<a href="#">保鲜盒/罐</a>
+                				<a href="#">米箱</a>
+                			</div>
+            		</li>
+            		<li class="ClearFix">
+            			<a class="type_tit" href="#">厨房配件<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">保温饭盒</a>
+                				<a href="#">置物架</a>
+                				<a href="#">冰箱收纳</a>
+                				<a href="#">调料收纳</a>
+                				<a href="#">厨房小工具</a>
+                				<a href="#">厨房清洁</a>
+                				<a href="#">厨房小工具</a>
+                				<a href="#">厨房清洁</a>
+                			</div>
+            		</li>
+    				<li class="ClearFix">
+            			<a class="type_tit" href="#">家装建材<i class="iconfont"></i></a>
+            				<div class="three_type">
+                				<a href="#">照明灯具</a>
+                				<a href="#">卫浴用品</a>
+                				<a href="#">其他</a>
+                			</div>
+            	</li>          											
+            </ul>
+    	
+    	</div>
+	</li>
+	</ul>
+	</div>
+	</div>
+</div>
+</div>
+</div>
+<!--banner-->
+<div id="details">
+	<div class="details">
+	<div class="banner" id="banner">
+			<ul class="img-list" id="img-list">
+				<li style="z-index: 6;"><img src="image/banner1.jpg"></li>
+				<li style="z-index: 5;"><img src="image/banner2.jpg"></li>
+				<li style="z-index: 4;"><img src="image/banner3.jpg"></li>
+				<li style="z-index: 3;"><img src="image/banner4.jpg"></li>
+				<li style="z-index: 2;"><img src="image/banner5.jpg"></li>
+				<li style="z-index: 1;"><img src="image/banner6.jpg"></li>
+			</ul>
+
+			<ul style="z-index: 10;" class="banner-nav-list" id="banner-nav-list">
+				<span class=""></span>
+				<span class="on"></span>
+				<span class=""></span>
+				<span class=""></span>
+				<span class=""></span>
+				<span class=""></span>
+			</ul>
+	</div>
+
+<!--限时抢-->
+	<!--标题-->
+<div id="xsq">
+
+<div id="xsq">
+	<div class="xsq">	
+	<div class="vedio_title ClearFix">
+		<div class="v_h2">
+			<p class="h2_top"><i></i>限时抢<span>每天三档超值限时抢</span></p>
+		</div>
+	</div>
+	<!--左边-->
+	<img class="xsqg_L" src="image/xsq_l.png"/>
+	<!--右边-->
+	<div class="xsqg_R">
+			<!--限时抢切换tab-->
+		<div class="floor_title">
+			<ul class="floor_type">
+				<li class="on"><a href="javascript:;">8点专场</a></li>
+				<li ><a href="javascript:;">15点专场</a></li>
+				<li><a href="javascript:;">19点专场</a></li>
+			</ul>		
+		<div class="xsqg_djs" style="display:none">
+                               距结束仅剩<span class="xsqg_djs_time djs_time" data-endtime="26796"><b class="djs_h">07</b><span>:</span><b class="djs_m">26</b><span>:</span><b class="djs_s">36</b></span>
+        </div>
+		<div class="xsqg_djs">
+                               距结束仅剩<span class="xsqg_djs_time djs_time" data-endtime="26796"><b class="djs_h">07</b><span>:</span><b class="djs_m">26</b><span>:</span><b class="djs_s">36</b></span>
+        </div>
+		<div class="xsqg_djs" style="display:none">
+                               距开始仅剩<span class="xsqg_djs_time djs_time" data-endtime="8796"><b class="djs_h">02</b><span>:</span><b class="djs_m">26</b><span>:</span><b class="djs_s">36</b></span>
+       </div>		                
+	</div>
+	<!--限时抢切换tab-->
+		<!--限时抢商品 8点专场-->
+	<div class="xsqg_list" >
+		<div class="tempWrap" style="overflow:hidden; position:relative; width:828px"><ul class="xsqg_ul" style="width: 5244px; left: 0px; position: relative; overflow: hidden; padding: 0px; margin: 0px;">
+					<!--li_start已开始 li_wait 提前看 li_over 已经束-->
+			<li class="li_start hrefB" style="float: left; width: 239px;">
+				<a href="detalis.html?bid=001" target="_blank" class="sxqg_img hrefA">
+					<img src="image/jrzz.jpg" style="display:inline" onerror="this.onerror=null;this.src='http://ecimg.happigo.com/resource/web/new_web/images/img_default_goods.png'">
+        			<div class="xsqg_jbkuangsheng">狂省97元</div>
+				</a>
+				<a href="detalis.html?bid=001" target="_blank" class="xsqg_title hrefA">
+					<p class="xsqg_title1">京润珍珠 纯珍珠粉5g*20袋(微米级)</p>
+				</a>
+				<div class="xsqg_btn">
+					<div class="xsqg_l"><span class="xsqg_p1">￥<strong>89</strong></span>
+						<span class="xsqg_p2">￥186</span>
+					</div>
+						<a href="detalis.html?bid=001" target="_blank" class="xsqg_buy hrefA">立即抢购</a>
+				</div>
+			</li>
+			
+			<li class="li_start hrefB" style="float: left; width: 239px;">
+				<a href="detalis.html?bid=002" target="_blank" class="sxqg_img hrefA">
+					<img src="image/kr.jpg" style="display:inline" onerror="this.onerror=null;this.src='http://ecimg.happigo.com/resource/web/new_web/images/img_default_goods.png'">
+        			<div class="xsqg_jbkuangsheng">狂省193元</div>
+				</a>
+				<a href="detalis.html?bid=002" target="_blank" class="xsqg_title hrefA">
+					<p class="xsqg_title1">（跨境）Kiehls科颜氏 高保湿面霜125ml</p>
+				</a>
+				<div class="xsqg_btn">
+					<div class="xsqg_l"><span class="xsqg_p1">￥<strong>359</strong></span>
+						<span class="xsqg_p2">￥552</span>
+					</div>
+						<a href="detalis.html?bid=002" target="_blank" class="xsqg_buy hrefA">立即抢购</a>
+				</div>
+			</li>
+			
+			<li class="li_start hrefB" style="float: left; width: 239px;">
+				<a href="detalis.html?bid=003" target="_blank" class="sxqg_img hrefA">
+					<img src="image/xgj.jpg" style="display:inline" onerror="this.onerror=null;this.src='http://ecimg.happigo.com/resource/web/new_web/images/img_default_goods.png'">
+        			<div class="xsqg_jbkuangsheng">狂省30元</div>
+				</a>
+				<a href="detalis.html?bid=003" target="_blank" class="xsqg_title hrefA">
+					<p class="xsqg_title1">德国贺本清小甘菊修护唇膏4.8g+龟裂修护霜20ml+新柔皙护手霜20ml</p>
+				</a>
+				<div class="xsqg_btn">
+					<div class="xsqg_l"><span class="xsqg_p1">￥<strong>69</strong></span>
+						<span class="xsqg_p2">￥99</span>
+					</div>
+						<a href="detalis.html?bid=003" target="_blank" class="xsqg_buy hrefA">立即抢购</a>
+				</div>
+			</li>	
+		</ul>
+	</div>
+	</div>
+			
+	</div>
+	</div>
+</div>
+</div>
+			
+		
+	
+	
+	
+<!--新品推荐-->
+<div id="xp">
+
+	<div class="newbrand_box ">
+	<!--标题-->
+	<div class="vedio_title ClearFix">
+		<div class="v_h2">
+			<p class="h2_top"><i></i>新品推荐<span>为你寻觅世间好</span></p>
+			<div class="change_goods" id="every_day_ajax" data-every-page="2"><i class="iconfont i_change_g"></i>换一批</div>
+		</div>
+	</div>
+	<!--标题 end-->	
+	<!--商品列表-->
+	<ul class="mryh_goods ClearFix floor_g_list" id="ul_every_day_data">
+	   		<li class="hrefB">
+    		<a  class="div_a hrefA" target="_blank" href="detalis.html?bid=004">    			
+    			<div class="a_con4_list">
+    				<p class="p_img">
+    				<img class="lazy" src="image/bear.jpg" id="goods_image_187136" style="display: inline;" onerror="this.onerror=null;this.src='http://ecimg.happigo.com/resource/web/new_web/images/img_default_goods.png'">
+    				</p>
+    			</div>
+    			<div>
+    				<p class="g_other_info">陶瓷杯身食材不易串味</p>
+    				<p class="p_title">Bear小熊QSJ-B02K1绞肉机家用电动陶瓷小型打肉馅搅拌碎菜蒜泥(蓝/白色)</p>
+    			</div>
+    			<p class="p_p">
+    			    <span class="price1">￥<span>149</span></span>
+    			    <span class="price2"><del>￥199</del></span>
+    			</p>
+			</a>
+			</li>
+			
+			<li class="hrefB">
+    		<a class="div_a hrefA" target="_blank" href="detalis.html?bid=005">    			
+    			<div class="a_con4_list">
+    				<p class="p_img">
+    				    <img class="lazy" src="image/suljpg.jpg" id="goods_image_187196" style="display: inline;" onerror="this.onerror=null;this.src='http://ecimg.happigo.com/resource/web/new_web/images/img_default_goods.png'">
+    				</p>
+    			</div>
+    			<div>
+    				<p class="g_other_info">养肤裸妆 水润遮瑕</p>
+    				<p class="p_title">（跨境）韩国Sulwhasoo雪花秀 采淡致美养肤气垫粉底液经典新版15g*2</p>
+    			</div>
+    			<p class="p_p">
+    			    <span class="price1">￥<span>258</span></span>
+    			    <span class="price2"><del>￥387</del></span>
+    			</p>
+			</a>
+			</li>
+			
+			<li class="hrefB">
+    		<a class="div_a hrefA" target="_blank" href="detalis.html?bid=006">
+    			<div class="a_con4_list">
+    				<p class="p_img">
+    				    <img class="lazy" src="image/gm.jpg" id="goods_image_187022" style="display: inline;" onerror="this.onerror=null;this.src='http://ecimg.happigo.com/resource/web/new_web/images/img_default_goods.png'">
+    				</p>
+    			</div>
+    			<div>
+    				<p class="g_other_info">好柔嫩好吸收</p>
+    				<p class="p_title">GM澳芝曼绵羊油滋润保湿面部身体面霜250g</p>
+    			</div>
+    			<p class="p_p">
+    			    <span class="price1">￥<span>35</span></span>
+    			    <span class="price2"><del>￥49</del></span>
+    			</p>
+			</a>
+			</li>
+			
+			<li style="margin-right:0px" class="hrefB">
+    		<a class="div_a hrefA" target="_blank" href="detalis.html?bid=007">
+    		<div class="a_con4_list">
+    				<p class="p_img">
+    				    <img class="lazy" src="image/it.jpg" id="goods_image_187190" style="display: inline;" onerror="this.onerror=null;this.src='http://ecimg.happigo.com/resource/web/new_web/images/img_default_goods.png'">
+    				</p>
+    			</div>
+    			<div>
+    				<p class="g_other_info">红参滋养抗初老</p>
+    				<p class="p_title">（跨境）韩国Its Skin伊思 晶钻红参蜗牛霜60g</p>
+    			</div>
+    			<p class="p_p">
+    			    <span class="price1">￥<span>299</span></span>
+    			    <span class="price2"><del>￥399</del></span>
+    			</p>
+			</a>
+		</li>
+	</ul>
+	</div>
+</div>
+	<!--商品列表end -->
+	
+	
+	<!--精选活动-->
+	<div id="jxhd">
+		<div class="newbrand_box ">
+	<!--标题-->
+		<div class="vedio_title ClearFix">
+			<div class="v_h2">
+				<p class="h2_top"><i></i>精选活动</p>
+			</div>
+		</div>
+		<img src="image/b3.jpg" class="b1"/>
+		<ul class="mryh_goods ClearFix floor_g_list" id="ul_every_day_data">
+	   		<li class="hrefB">
+    		<a  class="div_a hrefA" target="_blank" href="detalis.html?bid=008">    			
+    			<div class="a_con4_list">
+    				<p class="p_img">
+    					<img class="lazy" src="image/xn.jpg" data-original="https://ecimg.happigo.com/data/upload/shop/store/goods/1/126/247126/1_main_247126_360.jpg" id="goods_image_186125" style="display: inline;" onerror="this.onerror=null;this.src='http://ecimg.happigo.com/resource/web/new_web/images/img_default_goods.png'">
+    				</p>
+    			</div>
+    			<div>
+    				<p class="g_other_info">手感柔软 经典时尚</p>
+    				<p class="p_title">雪暖男士休闲貉子毛领90%羽绒服</p>
+    			</div>
+    			<p class="p_p">
+    			    <span class="price1">￥<span>298</span></span>
+    			    <span class="price2"><del>￥498</del></span>
+    			</p>
+			</a>
+			</li>
+			
+			<li class="hrefB">
+    		<a class="div_a hrefA" target="_blank" href="detalis.html?bid=009">    			
+    			<div class="a_con4_list">
+    				<p class="p_img">
+    				    <img class="lazy" src="image/xnvbig.jpg" id="goods_image_187048" style="display: inline;" onerror="this.onerror=null;this.src='http://ecimg.happigo.com/resource/web/new_web/images/img_default_goods.png'">
+    				</p>
+    			</div>
+    			<div>
+    				<p class="g_other_info">手感柔软 经典时尚</p>
+    				<p class="p_title">雪暖大貉子毛领女士90%羽绒服</p>
+    			</div>
+    			<p class="p_p">
+    			    <span class="price1">￥<span>299</span></span>
+    			    <span class="price2"><del>￥399</del></span>
+    			</p>
+			</a>
+			</li>
+			
+			<li class="hrefB">
+    		<a class="div_a hrefA" target="_blank" href="detalis.html?bid=010">
+    			<div class="a_con4_list">
+    				<p class="p_img">
+    				    <img class="lazy" src="image/dod.jpg" data-original="https://ecimg.happigo.com/data/upload/shop/store/goods/1/35/249035/1_main_249035_360.jpg" id="goods_image_186937" style="display: inline;" onerror="this.onerror=null;this.src='http://ecimg.happigo.com/resource/web/new_web/images/img_default_goods.png'">
+    				</p>
+    			</div>
+    			<div>
+    				<p class="g_other_info">收腰随意切换</p>
+    				<p class="p_title">迪欧达女士双防面料加拿大鹅绒大衣DX8113</p>
+    			</div>
+    			<p class="p_p">
+    			    <span class="price1">￥<span>29.9</span></span>
+    			    <span class="price2"><del>￥49</del></span>
+    			</p>
+			</a>
+			</li>
+			
+			<li style="margin-right:0px" class="hrefB">
+    		<a class="div_a hrefA" target="_blank" href="detalis.html?bid=011">
+    		<div class="a_con4_list">
+    				<p class="p_img">
+    				    <img class="lazy" src="image/lsbig.jpg" id="goods_image_186126" style="display: inline;" onerror="this.onerror=null;this.src='http://ecimg.happigo.com/resource/web/new_web/images/img_default_goods.png'">
+    				</p>
+    			</div>
+    			<div>
+    				<p class="g_other_info">休闲减龄美观大气</p>
+    				<p class="p_title">尚街新主义设计师款双面羊毛大衣</p>
+    			</div>
+    			<p class="p_p">
+    			    <span class="price1">￥<span>299</span></span>
+    			    <span class="price2"><del>￥399</del></span>
+    			</p>
+			</a>
+		</li>
+	</ul>
+	</div>
+	</div>
+	
+	
+	
+	<!--end线-->
+	<div class="type2_h2" id="myend" style="">
+		<div class="h2_center">
+			<h2 class="c">END</h2>
+			<div class="center_line"></div>
+		</div>
+	</div>
+	
+	</div>
+</div>
+	
+	<!--底部-->
+	<div class="footer">
+		<div class="footer0" > 
+			<div class="footer0-li">
+				<i class="iconfont "></i>
+				<p class="footer0_p1">成功上市</p>
+				<p class="footer0_p2">股票代码300413</p>
+			</div>
+			<div class="footer0-li">
+				<i class="iconfont "></i>
+				<p class="footer0_p1">快乐购严选</p>
+				<p class="footer0_p2">正品行货 品质保证</p>
+			</div>
+			<div class="footer0-li">
+				<i class="iconfont "></i>
+				<p class="footer0_p1">15天无理由退款</p>
+				<p class="footer0_p2">为您提供售后无忧保障</p>
+			</div>
+			<div class="footer0-li">
+				<i class="iconfont "></i>
+				<p class="footer0_p1">满129包邮</p>
+				<p class="footer0_p2">在线支付 购物包邮</p>
+			</div>
+			<div class="footer0-li">
+				<i class="iconfont "></i>
+				<p class="footer0_p1">直播订购</p>
+				<p class="footer0_p2">在线支付满199立减10</p>
+			</div>
+			<div class="footer0-li">
+				<i class="iconfont "></i>
+				<p class="footer0_p1">24小时微笑服务</p>
+				<p class="footer0_p2">365*24小时人工服务</p>
+			</div>
+		</div>
+	<div class="footer_help ">
+		<div class="footer1_l ">
+            <dl class="helpDL">
+                <dt>
+                    <h5>使用帮助</h5>
+                </dt>
+               	<dd><a href="#" title="税费收取规则" target="_blank"> 税费收取规则 </a></dd>
+                <dd><a href="#" title="新手指南" target="_blank"> 新手指南 </a></dd>
+                <dd><a href="#" title="用户协议" target="_blank"> 用户协议 </a></dd>
+                <dd><a href="#" title="常见问题" target="_blank"> 常见问题 </a></dd>
+            </dl>
+            <dl class="helpDL">
+                <dt>
+                    <h5>会员服务</h5>
+                </dt>
+                <dd><a href="#" title="快乐币政策" target="_blank"> 快乐币政策 </a></dd>
+                <dd><a href="#" title="会员权益" target="_blank"> 会员权益 </a></dd>
+               	<dd><a href="#" title="会员等级" target="_blank"> 会员等级 </a></dd>
+            </dl>
+            <dl class="helpDL">
+                <dt>
+                    <h5>支付方式</h5>
+                </dt>
+                <dd><a href="#" title="快乐币支付" target="_blank"> 快乐币支付 </a></dd>
+                <dd><a href="#" title="货到付款" target="_blank"> 货到付款 </a></dd>
+                <dd><a href="#" title="在线支付" target="_blank"> 在线支付 </a></dd>
+                <dd><a href="#" title="优惠券支付" target="_blank"> 优惠券支付 </a></dd>
+            </dl>
+            <dl class="helpDL">
+                <dt>
+                    <h5>配送方式</h5>
+                </dt>
+                <dd><a href="#" title="包邮政策" target="_blank"> 包邮政策 </a></dd>
+                <dd><a hhref="#" title="费用说明" target="_blank"> 费用说明 </a></dd>
+                <dd><a href="#" title="配送说明" target="_blank"> 配送说明 </a></dd>
+            </dl>
+            <dl class="helpDL">
+                <dt>
+                    <h5>售后服务</h5>
+                </dt>
+                <dd><a href="#" title="电子发票" target="_blank"> 电子发票 </a></dd>
+                <dd><a href="#" title="售后咨询" target="_blank"> 售后咨询 </a></dd>
+                <dd><a href="#" title="退货办理" target="_blank"> 退货办理 </a></dd>
+                <dd><a href="#" title="退货政策" target="_blank"> 退货政策 </a></dd>
+            </dl>
+        </div>
+		
+		<div class="footer1_r">
+			<ul>
+				<li>
+					<h2>手机快乐购</h2> <img src="image/footer_ewm_01.png">
+					<p>下载移动客户端</p>
+				</li>
+				<li>
+					<h2>快乐购微信</h2> <img src="image/footer_ewm_02.png">
+					<p>快乐购方网微信</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="footer_bottom">
+		<div class="footer_nav">
+			<div class="w720 ClearFix">
+				<ul>
+              		<li>
+                        <a href="#" target="_blank">关于快乐购</a>
+                        <span class="line"></span>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">投资者关系</a>
+                        <span class="line"></span>
+                   	</li>
+                    <li>
+                        <a target="_blank" href="#">自营品牌招商</a>
+                        <span class="line"></span>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">联系我们</a>
+                        <span class="line"></span>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#">营业证照</a>
+                    </li>          
+				</ul>
+			</div>
+		</div>
+		<div class="w1090">
+			<li>
+            	<span class="font_arial">Copyright© 2006-2018 happigo. All Rights Reserved </span>
+			</li>
+			 <li>	                
+            	免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800
+	            <span class="font_arial">E-Mail: service@happigo.com</span><br>
+	            <div class="xiang">
+	            	<a href="#" style="color: #C8C8C8" target="_blank">湘ICP备17009657号   &nbsp</a>
+	            	 <span >信息网络传播视听节目许可证号：1810530  &nbsp &nbsp</span> <img class="ga" src="image/jh.png"><i class="xga">湘公网安备 43010502000556号</i>
+	            	<!--</a>-->
+	            </div>
+       		 </li>
+        	<li class="footer_p">
+	            <a target="_blank" href="#" style="height:40px;" class="img1"><img src="image/f1.png" style="height:40px;"></a>
+	            <a id="_pingansec_bottomimagesmall_brand" href="#"><img src="image/f4.png"></a>
+	            <a href="#" target="_blank"><img src="image/f2.png"></a>
+	            <a href="#" target="_blank"><img src="image/f3.png"></a>
+        	</li>
+		</div>
+	</div>
+</div>
+
+	<script src="js/index.js"></script>
+	<script src="js/public.js"></script>
+	<script type="text/javascript">
+		//search=15860073855
+			
+			console.log(document.cookie.split("=")[1]);
+			var username= document.cookie.split("=")[1];
+			if(document.cookie){
+				for (var i = 0; i < $(".hrefA").length; i++) {
+				$(".hrefA")[i].href += "&userName="+username;
+				}
+				for (var i = 0; i < $(".div_a").length; i++) {
+					$(".div_a")[i].href += "&userName="+username;
+				}
+				$(".a_login").html("["+username+"]");
+			}else{
+				$(".a_login").html("[登录]");
+			}
+			
+			
+			$(".h_c_r_car").click(function(){
+				if(document.cookie){
+					location.href = "cart.html?userName="+username;
+				}else{
+					alert("登录后才可以进入购物车");
+					location.href="login.html";
+				}
+			})
+	</script>
+	</body>
+</html>
+	
+
+	

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/regAndLog.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script src="js/jquery.min.js"></script>
+		<!--<script src="js/register.js"></script>-->
+	</head>
+	<body>
+	<!--头部-->
+    <div class="top ">
+        <div class="h_c_logo">
+            <a href="#">
+                <img src="image/logo.jpg">
+            </a>
+        </div>
+        <div class="h_c_right">
+            <img src="image/topR.jpg">
+        </div>
+    </div>
+	
+	<!--center-->
+	<div class="login_box">
+		<div class="logn_b_l">
+            <img  src="image/zhuce.jpg">
+		</div>
+		
+		<div class="logn_b_r">
+            <div class="login_h2 ">
+                <h2>用户注册</h2>
+                <div class="lognrtop">已有帐号<a href="login.html">在此登录</a></div>
+            </div>
+			<div class="zc">
+            	<form action="php/register.php" method="get">
+            		<div class = "item1">
+            			<input type="text" id ="uname"  name="uname" placeholder="请输入手机号码" />
+            			<span id="error_user1" class="error error_user" style="display: none">已注册</span>
+            			<span id="error_user2" class="error error_user" style="display: none">格式错误</span>
+            			<span id="succ_user" class="succ succ_user" style="display: none">可&nbsp;用</span>
+            			<div class="err_box">
+                            <div class="err_msg err_msg1" style="display: none;" id="error_mobile"><i class="icon_err"></i>请输入11位手机号码</div>
+                         </div>
+            		</div>
+            		<div class = "item2">
+            			<input type="text"  placeholder="验证码" class="yzm" />
+            			<div id="hide_times">获取短信验证码</div>
+            		</div>
+            		<div class = "item3">
+            			<input type="password" id ="pwd" name="pwd" placeholder="请输入密码" />
+            			<span id="error_pass" class="error_pass" style="display: none">格式错误</span>
+            			<span id="succ_pass" class="succ_pass" style="display: none">可&nbsp;用</span>
+            			<div class="err_box">
+                            <div class="err_msg err_msg3" style="display: none" id="error_password"><i class="icon_err"></i>密码2-20位，可能为字母、数字或下划线的组合</div>
+                        </div>
+            		</div>
+            		<div class = "item4">
+            			<input type="password" id = "apwd" name="apwd" placeholder="请再次输入密码" />
+            			<span id="error_notpass" class="error error_notpass " style="display: none">密码不一致</span>
+						<span id="succ_notpass" class="succ succ_notpass" style="display: none">密码一致</span>
+            			<div class="err_box">
+                            <div class="err_msg err_msg4" style="display: none;" id="error_password_confirm"><i class="icon_err"></i>请确认密码</div>
+                        </div>
+            		</div>
+            		<div class="login-btn">
+                        <a id="loginsubmit" tabindex="7" class="btn-img btn-entry" href="login.html" style="background:#F11D20">立即注册</a>
+                    </div>
+                    <div class="agree">
+                        <input type="checkbox" class="jdcheckbox" tabindex="8" name="agree" id="agree" checked="checked">
+                        <label for="autoLogin">注册即表示同意快乐购<span><a href="#">《用户服务协议》</a></span>条款</label>
+                    </div>
+            	</form>
+            </div>
+        </div>
+        
+        
+    	<!--底部-->
+	    <div class="footer">
+	    	<div class="footer_bottom">
+		        <div class="w1200">
+		            <p>
+		                <span class="font_arial">Copyright© 2006-2016 happigo. All Rights Reserved </span>
+		                免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800
+		                <span class="font_arial">E-Mail: service@happigo.com</span><br>
+		                湘ICP备17009657号 信息网络传播视听节目许可证号：1810530
+		            </p>
+		            <p class="footer_p">
+		                <a href="#" class="foot3">
+		                    <img src="image/foot_img3.png"></a>
+		                <a href="#" class="foot4">
+		                    <img src="image/foot_img4.png"></a>
+		            </p>
+		        </div>
+	    	</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+	var loginsubmit = document.getElementById("loginsubmit");
+//		用户名验证
+	var uname = document.getElementById("uname");
+	var err_msg = document.getElementsByClassName("err_msg");
+	var succ_user = document.getElementById("succ_user");
+	var error_user1 = document.getElementById("error_user1");
+	var error_user2 = document.getElementById("error_user2");
+	var userCheckSuc = false;
+	var userNameReg = /^1[3-9]\d{9}$/;
+	//用户名验证
+	uname.onfocus = function(){
+//		err_msg1.style.display = "block";
+		succ_user.style.display = "none";
+		error_user2.style.display = "none";
+	}
+	
+	var secc =false;
+	uname.onblur = function(){
+//		err_msg1.style.display = "none";
+		//光标离开时要对用户名进行一个验证
+		if(checkUserName()){
+			//验证成功
+			userCheckSuc = true;
+			$.ajax({
+				type:"get",
+				url:"php/register.php",
+				data:{uname:this.value},
+				success:function(res){
+				//后台需要返回一个表用户名是否存在的变量，
+				//1为存在，2为不存在。
+					console.log(res);
+					if(res == 1){
+						secc = false;
+	//					error_user2.innerHTML = "已注册"
+						succ_user.style.display = "none";
+						error_user2.style.display = "none";
+						error_user1.style.display = "block";
+						
+					}else if(res == 2){
+						secc = true;
+						error_user2.style.display = "none";
+						error_user1.style.display = "none";
+						succ_user.style.display = "block";
+							
+					}
+				}
+			})
+		}else{
+			//失败
+			error_user2.style.display = "block";
+			succ_user.style.display = "none";
+			error_user1.style.display = "none";
+		}
+		
+	}
+	function checkUserName(){
+		var uVal = uname.value;
+		if(userNameReg.test(uVal)){//对用户名进行正则的验证
+			return true;//验证成功
+		}else{
+			return false;//验证失败
+		}
+	}
+//	密码验证
+	var pwd = document.getElementById("pwd");
+	var succ_pass = document.getElementById("succ_pass");
+	var error_pass = document.getElementById("error_pass");
+	var passCheckSuc = false;
+	var passReg = /^\w{2,20}$/;
+
+	pwd.onfocus = function(){
+		succ_pass.style.display = "none";
+		error_pass.style.display = "none";
+	}
+	pwd.onblur = function(){
+
+		if(checkPass()){
+			//验证成功
+			passCheckSuc = true;
+			succ_pass.style.display = "block";
+			error_pass.style.display = "none";
+		}else{
+			//失败
+			error_pass.style.display = "block";
+			succ_pass.style.display = "none";
+		}
+	}
+	function checkPass(){
+		var pVal = pwd.value;
+		if(passReg.test(pVal)){//进行正则的验证
+			return true;//验证成功
+		}else{
+			return false;//验证失败
+		}
+	}
+	
+//	密码确认
+	var apwd = document.getElementById("apwd");
+	var succ_notpass = document.getElementById("succ_notpass");
+	var error_notpass = document.getElementById("error_notpass");
+	var notpassCheckSuc = false;
+	apwd.onfocus = function(){
+		succ_notpass.style.display = "none";
+		error_notpass.style.display = "none";
+	}
+	apwd.onblur = function(){
+		if(checknotpass()){
+			//验证成功
+			notpassCheckSuc = true;
+			succ_notpass.style.display = "block";
+			error_notpass.style.display = "none";
+		}else{
+			//失败
+			error_notpass.style.display = "block";
+			succ_notpass.style.display = "none";
+		}
+	}
+	function checknotpass(){
+		var notPVal = apwd.value;
+		var pVal = pwd.value; 
+		if(notPVal == pVal){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	
+//	提交
+	var insert = false;
+	loginsubmit.onclick = function(){
+		//if(用户名验证通过 && 密码要通过 && 密码确认通过){
+			
+		if(checkUserName && passCheckSuc && notpassCheckSuc && secc ){	
+			$.ajax({
+				type:"get",
+				url:"php/register2.php",
+				data:{
+					uname:uname.value,
+					pwd:pwd.value
+				},
+				success:function(res){
+				//后台需要返回一个表用户名是否存在的变量，
+				//1为存在，2为不存在。
+					if(res == 3){
+						insert = true;
+					}else if(res == 4){
+						insert = false;
+							
+					}
+				}
+			})
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	
+
+	</script>
+	<script src="js/register.js"></script>
+	</body>
+</html>

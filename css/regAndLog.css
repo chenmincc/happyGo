@@ -1,0 +1,70 @@
+html,body,ul,li,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,img,dt,dd,dl,figure,figcaption{
+    margin:0;
+    padding: 0; 
+}
+strong,b{
+    font-weight: normal;
+}
+a,u{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    font-size: 16px;
+}
+i,em{
+    font-style: normal;
+}
+ul,ol,li{
+    list-style: none;
+}
+img{
+    border:0;display:block;
+}
+input{
+    outline:none;
+}
+/*头部*/
+.top{
+	width: 1004px;
+	height: 100px;
+	margin: 0 auto;
+}
+.h_c_logo {
+    float: left;
+    width: 74px;
+    margin-right: 7px;
+    margin-top: 30px;
+}
+.h_c_right {
+    float: right;
+    position: relative;
+    margin-top: 49px;   
+}
+
+/*底部*/
+.footer {
+	width: 1004px;
+	margin: 0 auto;
+    background-color: #fff;
+    padding-top: 54px;
+    overflow: hidden;
+}
+
+.footer_bottom p {
+    margin-top: 34px;
+    text-align: center;
+    color: #7e7e7e;
+    line-height: 25px;
+    font-size: 12px;
+}
+.font_arial {
+    color: #666666;
+}
+.footer_p .foot3 img{
+	padding: 0 0 40px 186px;
+	float: left;
+}
+.footer_p .foot4 img{
+	float: left;
+}

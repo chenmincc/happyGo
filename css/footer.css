@@ -1,0 +1,172 @@
+.footer {
+	background-color: #fff;
+	margin-top: 25px;
+	overflow: hidden;
+}
+
+.footer0 {
+	padding-top: 30px;
+	padding-bottom: 40px;
+	height: 116px;
+}
+.footer0-li {
+	float: left;
+	width: 181px;
+	text-align: center;
+}
+
+.footer0-li i {
+	color: #DF0010;
+	font-size: 50px;
+}
+
+.footer0_p1 {
+	color: #333;
+	font-size: 17px;
+	line-height: 17px;
+	/*margin-top: 20px;*/
+	font-weight: bold;
+}
+
+.footer0_p2 {
+	color: #999;
+	font-size: 15px;
+	line-height: 15px;
+	margin-top: 8px;
+}
+.footer1_l {
+	float: left;
+	width: 900px;
+}
+
+.footer_help {
+	padding-top: 40px;
+	position: relative;
+	overflow: hidden;
+	border-top: 1px solid #EAEAEA;
+}
+
+.helpDL {
+	float: left;
+	padding: 0 50px 0 36px;
+}
+
+.helpDL h5 {
+	color: #333;
+	font-size: 17px;
+	font-weight: normal;
+	height: 31px;
+}
+
+.helpDL dd a {
+	color: #666;
+	font-size: 12px;
+	height: 22px;
+	line-height: 22px;
+}
+
+.footer1_r {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+}
+
+.footer1_r ul li {
+	float: left;
+	width: 100px;
+	margin-right: 20px;
+	text-align: center;
+}
+
+.footer1_r ul li h2 {
+	color: #333333;
+	font-size: 14px;
+	font-weight: 600;
+	height: 31px;
+}
+
+.footer1_r ul li p {
+	font-size: 14px;
+	color: #666666;
+}
+
+.w720 { 
+	width: 720px; 
+	margin: 0 auto; 
+	text-align:center;
+}
+.footer_nav {
+	border-top: 3px solid #F31425;
+	overflow: hidden;
+	margin-top: 45px;
+}
+
+.footer_nav ul {
+	margin-top: 22px;
+}
+
+.footer_nav ul li {
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	padding-right: 12px;
+}
+
+.footer_nav ul li a {
+	font-size: 12px;
+	color: #fff;
+}
+
+.footer_nav .line {
+	padding-left: 14px;
+	background: none;
+	border-right: 1px solid #fff;
+}
+
+.footer_bottom {
+	background-color: #262626;
+}
+
+.font_arial {
+	color: #c8c8c8;
+    font-size: 12px;
+}
+
+.footer_bottom li {
+	padding-top: 10px;
+	text-align: center;
+	color: #C8C8C8;
+	line-height: 21px;
+    font-size: 12px;
+}
+
+.footer_bottom .footer_p {
+	padding: 60px 0 40px 0;
+	
+}
+.w1090 .xiang{
+	padding-left: 390px;
+	height: 24px;
+	/*background: red;*/
+	text-align: center;
+	font-size: 12px;
+	color: #FFFFFF;
+	margin-top: 10px;
+}
+.w1090 .xiang >span,.w1090 .xiang >a,.w1090 .xiang >img{
+	float: left;
+}
+.w1090 .xiang .xga{
+	margin-left:-458px;
+}
+.footer_p >a{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: -30px;
+}
+.footer_p .img1{
+	margin-left: 500px;
+}

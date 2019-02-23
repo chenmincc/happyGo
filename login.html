@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/regAndLog.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<script src="js/jquery.min.js"></script>
+		<!--<script src="js/register.js"></script>-->
+	</head>
+	<body>
+	<!--头部-->
+    <div class="top ">
+        <div class="h_c_logo">
+            <a href="#">
+                <img src="image/logo.jpg">
+            </a>
+        </div>
+        <div class="h_c_right">
+            <img src="image/topR.jpg">
+        </div>
+    </div>
+	
+	<!--center-->
+	<div class="login_box">
+		<div class="logn_b_l">
+            <img  src="image/zhuce.jpg">
+		</div>
+		
+		<div class="logn_b_r">
+            <div class="login_h2 ">
+                <h2>登录快乐购</h2>
+                <div class="lognrtop">还没有快乐购帐号<a href="register.html">快速注册</a></div>
+            </div>
+			<div class="zc">
+            	<form action="php/login.php" method="get">
+            		<div class = "item1">
+            			<input type="text" id ="uname"  name="uname" placeholder="请输入已验证手机号码" />
+            			<span id="error_user" class="error error_user" style="display: none">不存在</span>
+            			<span id="succ_user" class="succ succ_user" style="display: none">正&nbsp;确</span>
+            			<div class="err_box">
+                            <div class="err_msg err_msg1" style="display: none;" id="error_mobile"><i class="icon_err"></i>请输入11位手机号码</div>
+                         </div>
+            		</div>
+            		<div class = "item3">
+            			<input type="password" id ="pwd" name="pwd" placeholder="请输入密码" />
+            			<span id="error_pass" class="error_pass" style="display: none">密码错误</span>
+            			<span id="succ_pass" class="succ_pass" style="display: none">正&nbsp;确</span>
+            			<div class="err_box">
+                            <div class="err_msg err_msg3" style="display: none" id="error_password"><i class="icon_err"></i>密码2-20位，可能为字母、数字或下划线的组合</div>
+                        </div>
+            		</div>
+            		<div class="login-btn">
+                        <a id="loginsubmit" tabindex="7" class="btn-img btn-entry" href="#" style="background:#F11D20">立即登录</a>
+                   </div>
+                    <div class="coagent">
+                        <h5>您可以使用以下账号登录</h5>
+                        <ul>
+                            <li>
+                                <a class="hz_xl"  title="QQ"><img src="image/dl1.png"/></a>
+                            </li>
+                            <li>
+                                <a class="hz_qq"  title="新浪微博"><img src="image/dl2.png"/></a>
+                            </li>
+                            <li>
+                                <a class="hz_zfb"  title="支付宝"><img src="image/dl3.png"/></a>
+                            </li>
+                        </ul>
+                    </div>
+            	</form>
+            </div>
+        </div>
+        
+        
+    	<!--底部-->
+	    <div class="footer">
+	    	<div class="footer_bottom">
+		        <div class="w1200">
+		            <p>
+		                <span class="font_arial">Copyright© 2006-2016 happigo. All Rights Reserved </span>
+		                免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800
+		                <span class="font_arial">E-Mail: service@happigo.com</span><br>
+		                湘ICP备17009657号 信息网络传播视听节目许可证号：1810530
+		            </p>
+		            <p class="footer_p">
+		                <a href="#" class="foot3">
+		                    <img src="image/foot_img3.png"></a>
+		                <a href="#" class="foot4">
+		                    <img src="image/foot_img4.png"></a>
+		            </p>
+		        </div>
+	    	</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+	$("#loginsubmit").click(function(){
+		$.ajax({
+			type:"get",
+			url:"php/login.php",
+			data:{
+				uname:$("#uname").val(),
+				pwd:$("#pwd").val()
+			},
+			success:function(res){
+				console.log(res);
+				if(res == 4){
+					alert("密码错误");
+					location.href="login.html";
+				}else if(res == 5){
+					alert("用户名不存在，请重新登录");
+					location.href="login.html";
+				}else{
+					alert("登录成功");	
+					location.href="index.html?name="+res;
+					document.cookie = "name="+res;
+				}
+			}
+		});
+	})
+		
+
+	</script>
+	<script src="js/login.js"></script>
+	</body>
+</html>

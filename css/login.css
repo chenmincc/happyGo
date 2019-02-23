@@ -1,0 +1,199 @@
+html,body,ul,li,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,img,dt,dd,dl,figure,figcaption{
+    margin:0;
+    padding: 0; 
+}
+strong,b{
+    font-weight: normal;
+}
+a,u{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    font-size: 16px;
+}
+i,em{
+    font-style: normal;
+}
+ul,ol,li{
+    list-style: none;
+}
+img{
+    border:0;display:block;
+}
+input{
+    outline:none;
+}
+.login_box{
+	width: 1004px;
+	height:490px ;
+	margin: 0 auto;
+	/*background: orange;*/
+	position: relative;
+}
+.logn_b_l {
+    float: left;
+    width: 600px;
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 32px;
+}
+.logn_b_r{
+	width: 310px;
+	float :left;
+	/*background: pink;*/
+	margin-top: 20px;
+}
+.login_h2 {
+    padding-top: 23px;
+    padding-bottom: 30px;
+}
+.login_h2 h2 {
+    color: #c41f3a;
+    font-size: 22px;
+    height: 38px;
+    line-height: 38px;
+    font-weight: bold;
+    float: left;
+}
+
+.lognrtop {
+   	text-align: right;
+    height: 38px;
+    line-height: 38px;
+    font-size: 12px;
+    color: #8c8c8c;
+}
+.lognrtop a {
+    color: #c41f3a;
+}
+.zc input{
+	width: 306px;
+	height: 42px;
+	/*margin-bottom: 34px;*/
+}
+
+
+.login-btn a:hover {
+    background-color: #a82045;
+    text-decoration: none;
+}
+.login-btn a {
+    display: block;
+    width: 310px;
+    height: 44px;
+    color: #fff;
+    line-height: 44px;
+    background-color: #94193f;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+   margin-bottom: 8px;
+}
+
+.err_box {
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 3px;
+}
+.err_msg {
+    color: #c4203b;
+    padding: 0;
+    position: relative;
+    height: 23px;
+    line-height: 23px;
+    text-align: left;
+    width: 312px;
+    font-size: 12px;
+}
+
+/*用户名验证*/
+/*.item1 #error_user1,#succ_user,#error_user2{
+    height: 34px;
+    line-height: 12px;
+   	position: absolute;
+    top: 100px;
+    left: 944px;
+    color: #444;
+    font-size: 12px;
+}
+.item3 #error_pass,#succ_pass{
+    height: 34px;
+    line-height: 12px;
+   	position: absolute;
+    top: 234px;
+    left: 944px;
+    color: #444;
+    font-size: 12px;
+}
+.item4 #error_notpass,#succ_notpass{
+    height: 34px;
+    line-height: 12px;
+   	position: absolute;
+    top: 300px;
+    left: 944px;
+    color: #444;
+    font-size: 12px;
+}*/
+.safe span {
+    float: left;
+}
+.safe .jdcheckbox {
+    width: auto;
+    border: none;
+}
+.safe .forget-pw-safe {
+    float: right;
+    padding-right: 26px;
+    padding-top: 1px;
+}
+.safe a {
+    color: #595959;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    text-align: right;
+    outline: 0;
+}
+.coagent h5 {
+    color: #333;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+   margin-top: 14px;
+}
+.coagent ul {
+    margin-top: 14px;
+}
+.coagent li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.coagent li .hz_xl {
+    background-position: 0 -32px;
+}
+.coagent li a {
+    text-indent: -999em;
+    display: block;
+    width: 50px;
+    height: 50px;
+    /*background: url(../images/login_icon_list.png) 0 0;*/
+}
+.item1 #error_user,#succ_user{
+    height: 34px;
+    line-height: 12px;
+   	position: absolute;
+    top: 128px;
+    left: 944px;
+    color: #444;
+    font-size: 12px;
+}
+.item3 #error_pass,#succ_pass{
+    height: 34px;
+    line-height: 12px;
+   	position: absolute;
+    top: 206px;
+    left: 944px;
+    color: #444;
+    font-size: 12px;
+}
