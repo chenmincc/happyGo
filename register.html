@@ -13,20 +13,20 @@
     <div class="top ">
         <div class="h_c_logo">
             <a href="#">
-                <img src="image/logo.jpg">
+				<img src="image/log.png" style="display:block; margin-left:-30px">
             </a>
         </div>
         <div class="h_c_right">
-            <img src="image/topR.jpg">
+            <img src="image/topR.png">
         </div>
     </div>
-	
+
 	<!--center-->
 	<div class="login_box">
 		<div class="logn_b_l">
-            <img  src="image/zhuce.jpg">
+            <img  src="image/login.jpg">
 		</div>
-		
+
 		<div class="logn_b_r">
             <div class="login_h2 ">
                 <h2>用户注册</h2>
@@ -43,10 +43,10 @@
                             <div class="err_msg err_msg1" style="display: none;" id="error_mobile"><i class="icon_err"></i>请输入11位手机号码</div>
                          </div>
             		</div>
-            		<div class = "item2">
+            		<!-- <div class = "item2">
             			<input type="text"  placeholder="验证码" class="yzm" />
             			<div id="hide_times">获取短信验证码</div>
-            		</div>
+            		</div> -->
             		<div class = "item3">
             			<input type="password" id ="pwd" name="pwd" placeholder="请输入密码" />
             			<span id="error_pass" class="error_pass" style="display: none">格式错误</span>
@@ -73,8 +73,8 @@
             	</form>
             </div>
         </div>
-        
-        
+
+
     	<!--底部-->
 	    <div class="footer">
 	    	<div class="footer_bottom">
@@ -95,7 +95,7 @@
 	    	</div>
 		</div>
 	</div>
-	
+
 	<script type="text/javascript">
 	var loginsubmit = document.getElementById("loginsubmit");
 //		用户名验证
@@ -112,7 +112,7 @@
 		succ_user.style.display = "none";
 		error_user2.style.display = "none";
 	}
-	
+
 	var secc =false;
 	uname.onblur = function(){
 //		err_msg1.style.display = "none";
@@ -134,13 +134,13 @@
 						succ_user.style.display = "none";
 						error_user2.style.display = "none";
 						error_user1.style.display = "block";
-						
+
 					}else if(res == 2){
 						secc = true;
 						error_user2.style.display = "none";
 						error_user1.style.display = "none";
 						succ_user.style.display = "block";
-							
+
 					}
 				}
 			})
@@ -150,7 +150,7 @@
 			succ_user.style.display = "none";
 			error_user1.style.display = "none";
 		}
-		
+
 	}
 	function checkUserName(){
 		var uVal = uname.value;
@@ -192,7 +192,7 @@
 			return false;//验证失败
 		}
 	}
-	
+
 //	密码确认
 	var apwd = document.getElementById("apwd");
 	var succ_notpass = document.getElementById("succ_notpass");
@@ -216,21 +216,21 @@
 	}
 	function checknotpass(){
 		var notPVal = apwd.value;
-		var pVal = pwd.value; 
+		var pVal = pwd.value;
 		if(notPVal == pVal){
 			return true;
 		}else{
 			return false;
 		}
 	}
-	
-	
+
+
 //	提交
 	var insert = false;
 	loginsubmit.onclick = function(){
 		//if(用户名验证通过 && 密码要通过 && 密码确认通过){
-			
-		if(checkUserName && passCheckSuc && notpassCheckSuc && secc ){	
+
+		if(checkUserName && passCheckSuc && notpassCheckSuc && secc ){
 			$.ajax({
 				type:"get",
 				url:"php/register2.php",
@@ -245,7 +245,7 @@
 						insert = true;
 					}else if(res == 4){
 						insert = false;
-							
+
 					}
 				}
 			})
@@ -254,8 +254,8 @@
 			return false;
 		}
 	}
-	
-	
+
+
 
 	</script>
 	<script src="js/register.js"></script>

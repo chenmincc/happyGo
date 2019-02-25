@@ -13,24 +13,24 @@
     <div class="top ">
         <div class="h_c_logo">
             <a href="#">
-                <img src="image/logo.jpg">
+                <img src="image/log.png" style="display:block; margin-left:-30px">
             </a>
         </div>
         <div class="h_c_right">
-            <img src="image/topR.jpg">
+            <img src="image/topR.png">
         </div>
     </div>
-	
+
 	<!--center-->
 	<div class="login_box">
 		<div class="logn_b_l">
-            <img  src="image/zhuce.jpg">
+            <img  src="image/login.jpg">
 		</div>
-		
+
 		<div class="logn_b_r">
             <div class="login_h2 ">
-                <h2>登录快乐购</h2>
-                <div class="lognrtop">还没有快乐购帐号<a href="register.html">快速注册</a></div>
+                <h2>登录 JS 网站</h2>
+                <div class="lognrtop">还没有JS帐号<a href="register.html">快速注册</a></div>
             </div>
 			<div class="zc">
             	<form action="php/login.php" method="get">
@@ -70,8 +70,8 @@
             	</form>
             </div>
         </div>
-        
-        
+
+
     	<!--底部-->
 	    <div class="footer">
 	    	<div class="footer_bottom">
@@ -92,7 +92,7 @@
 	    	</div>
 		</div>
 	</div>
-	
+
 	<script type="text/javascript">
 	$("#loginsubmit").click(function(){
 		$.ajax({
@@ -111,14 +111,14 @@
 					alert("用户名不存在，请重新登录");
 					location.href="login.html";
 				}else{
-					alert("登录成功");	
+					alert("登录成功");
 					location.href="index.html?name="+res;
 					document.cookie = "name="+res;
 				}
 			}
 		});
 	})
-		
+
 
 	</script>
 	<script src="js/login.js"></script>
